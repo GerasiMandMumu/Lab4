@@ -28,6 +28,8 @@ class ComplexMotor:
     def setTonKilometers(self, ton_km):
         self.ton_km = ton_km
 
+    def __str__(self):
+        return f'{self.driver} {self.car} {self.fuel_type}'
 
 
-obj1 = ComplexMotor('Водитель', 'Машина', 'Топливо')
+
