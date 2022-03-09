@@ -1,3 +1,5 @@
+from Entities import Car, Driver, FuelType
+
 class ComplexMotor:
     def __init__(self, driver, car, fuel_type):
         self.driver = driver
@@ -29,5 +31,13 @@ class ComplexMotor:
         self.ton_km = ton_km
 
 
+car = Car('BWM', 200, 6)
+driver = Driver('Иван', 'Иванов', 30)
+fuel_type = FuelType('1', '1', '95')
 
-obj1 = ComplexMotor('Водитель', 'Машина', 'Топливо')
+
+obj1 = ComplexMotor(driver, car, fuel_type)
+
+print(obj1.driver)
+print(obj1.fuel_type)
+print(obj1.car)
