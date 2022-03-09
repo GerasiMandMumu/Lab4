@@ -5,7 +5,7 @@ class Driver:
         self.surname = surname
         self.age = age
     def __str__(self):
-        return f'{self.name} {self.surname}: {self.age}'
+        return f'{self.name} {self.surname}: {self.age}\n'
 
 # Автомобиль
 class Car:
@@ -14,7 +14,7 @@ class Car:
         self.power = power
         self.engine_capacity = engine_capacity
     def __str__(self):
-        return f'{self.brand} {self.power} {self.engine_capacity}'
+        return f'{self.brand} {self.power} {self.engine_capacity}\n'
     
 # Тип топлива
 class FuelType:
@@ -23,4 +23,4 @@ class FuelType:
         self.humidity = humidity
         self.title = title
     def __str__(self):
-        return f'{self.title} {self.humidity} {self.heat_combustion}'
+        return f'{self.title} {self.humidity} {self.heat_combustion}\n'
